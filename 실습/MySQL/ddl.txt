@@ -1,0 +1,35 @@
+create table DEPARTMENT (
+	deptno int not null primary key, 
+	dname varchar(20), 
+	college varchar(20), 
+	budget int
+); 
+
+create table PROFESSOR (
+	pid int not null primary key, 
+	pname varchar(10), 
+	deptno int, 
+	major varchar(10), 
+	hiredate date,
+    foreign key (deptno)
+    references department(deptno) 
+    on update restrict on delete restrict
+);
+
+create table STUDENT (
+	sid int not null primary key, 
+	sname varchar(10), 
+	deptno int, 
+	advisor int,
+	gen varchar(2),
+	addr varchar(10), 
+	birthdate date, 
+	grade decimal(3,2),
+    foreign key (deptno)
+    references department(deptno) 
+    on update restrict on delete restrict,
+    foreign key(advisor)
+    references PROFESSOR(pid)
+    on update restrict on delete restrict,
+    check (grade between 0.0 and 4.5)
+);

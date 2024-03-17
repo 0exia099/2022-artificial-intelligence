@@ -1,0 +1,68 @@
+insert into department
+	values(10, 'Computer', 'Engineering', 10000000);
+insert into department
+	values(20, 'Mechanical', 'Engineering', 20000000);
+insert into department
+	values(30, 'Physics', 'Sciences', 10000000);
+insert into department
+	values(40, 'Korean Language', 'Liberal Arts', 8000000);
+insert into department
+	values(50, 'General Education', 'Basic Studies', 8000000);
+
+insert into professor
+	values(101, 'Codd', 10, 'Database', str_to_date('1995-12-25', '%Y-%m-%d'));
+insert into professor
+	values(102, 'Turing', 10, 'Compiler', str_to_date('2002-06-11', '%Y-%m-%d'));
+insert into professor
+	values(201, 'Maxwell', 20, 'Automation', str_to_date('1998-03-01', '%Y-%m-%d'));
+insert into professor
+	values(202, 'Picasso', 20, 'CAD', str_to_date('1992-08-15', '%Y-%m-%d'));
+insert into professor
+	values(301, 'Gauss', 30, 'Magnetics', str_to_date('1997-04-20', '%Y-%m-%d'));
+insert into professor
+	values(302, 'Einstein', 30, 'Mechanics', str_to_date('1984-03-01', '%Y-%m-%d'));
+insert into professor
+	values(401, 'Heo Gyun', 40, 'Novel', str_to_date('2009-03-01', '%Y-%m-%d'));
+
+insert into student
+	values(1001, 'Minsu', 10, 101, 'M', 'Daegu', 
+	str_to_date('1995-12-15', '%Y-%m-%d'), 3.93);
+insert into student
+	values(1002, 'Emily', 30, 302, 'F', 'Seoul', 
+	str_to_date('1992-04-29', '%Y-%m-%d'), 3.25);
+insert into student
+	values(1003, 'Suji', 10, 102, 'F', 'Daegu', 
+	str_to_date('1988-01-03', '%Y-%m-%d'), 4.17);
+insert into student
+	values(1004, 'Insung', 20, 201, 'M', 'Busan', 
+	str_to_date('1997-10-10', '%Y-%m-%d'), 3.67);
+insert into student
+	values(1005, 'Daeho', 40, 401, 'M', 'Ulsan', 
+	str_to_date('1996-04-04', '%Y-%m-%d'), 3.04);
+insert into student
+	values(1006, 'Smith', 10, 101, 'M', 'Seoul', 
+	str_to_date('1991-11-05', '%Y-%m-%d'), 2.45);
+insert into student
+	values(1007, 'Maria', 20, 201, 'F', 'Gumi', 
+	str_to_date('1992-09-23', '%Y-%m-%d'), 3.45);
+insert into student
+	values(1008, 'Gildong', 30, 302, 'M', 'Pohang', 
+	str_to_date('1995-08-16', '%Y-%m-%d'), 3.31);
+insert into student
+	values(1009, 'Jane', 40, 401, 'F', 'Daegu', 
+	str_to_date('1994-03-20', '%Y-%m-%d'), 2.08);
+insert into student
+	values(1010, 'Taehee', 20, 202, 'F', 'Busan', 
+	str_to_date('1996-07-03', '%Y-%m-%d'), 4.41);
+insert into student
+	values(1011, 'Chilsu', 10, 102, 'M', 'Seoul', 
+	str_to_date('1989-06-19', '%Y-%m-%d'), 2.88);
+insert into student
+	values(1012, 'Sarang', 10, 101, 'F', 'Ulsan', 
+	str_to_date('1990-04-23', '%Y-%m-%d'), 3.68);
+insert into student
+	values(1013, 'Brown', 30, 302, 'M', 'Daegu', 
+	str_to_date('1988-02-21', '%Y-%m-%d'), 1.75);
+insert into student
+	values(1014, 'Hyunsu', 20, NULL, 'M', 'Gumi', 
+	str_to_date('1992-04-29', '%Y-%m-%d'), 2.03);
